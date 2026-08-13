@@ -445,3 +445,397 @@ body {
     }
 
 }
+/* =========================================
+   CONTACT PAGE
+   ========================================= */
+
+.contact-page {
+    margin: 0;
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            rgba(0, 5, 18, 0.25),
+            rgba(0, 5, 18, 0.25)
+        ),
+        url("../images/background.jpg")
+        center center / cover fixed no-repeat;
+
+    color: white;
+}
+
+
+/* Contact Content */
+
+.contact-content {
+    min-height: 100vh;
+
+    padding-top: 120px;
+    padding-bottom: 60px;
+
+    text-align: center;
+}
+
+
+/* Main Heading */
+
+.contact-content > h1 {
+    font-size: clamp(32px, 4vw, 48px);
+
+    margin: 0 0 45px;
+
+    color: white;
+
+    text-decoration: underline;
+    text-underline-offset: 6px;
+
+    text-shadow:
+        0 2px 6px rgba(0, 0, 0, 0.9);
+}
+
+
+/* Instagram + Mail */
+
+.contact-icons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 100px;
+
+    margin-bottom: 55px;
+}
+
+
+.contact-icon {
+    color: white;
+
+    text-decoration: none;
+
+    transition: transform 0.3s ease;
+}
+
+
+.contact-icon i {
+    font-size: 65px;
+
+    display: block;
+
+    text-shadow:
+        0 3px 8px rgba(0, 0, 0, 0.9);
+}
+
+
+.contact-icon p {
+    margin-top: 12px;
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+    text-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+
+.contact-icon:hover {
+    transform: scale(1.1);
+}
+
+
+/* Contact Person */
+
+.contact-person {
+    margin-bottom: 35px;
+
+    text-align: center;
+}
+
+
+.contact-person h2 {
+    margin: 0 0 12px;
+
+    font-size: 25px;
+
+    color: white;
+
+    text-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+
+.contact-person a {
+    display: block;
+
+    width: fit-content;
+
+    margin: 7px auto;
+
+    color: white;
+
+    font-size: 18px;
+
+    text-decoration: none;
+
+    text-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+
+.contact-person a:hover {
+    text-decoration: underline;
+}
+
+
+.contact-person a i {
+    margin-right: 8px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .contact-content {
+        padding-top: 100px;
+    }
+
+    .contact-content > h1 {
+        font-size: 34px;
+
+        margin-bottom: 35px;
+    }
+
+    .contact-icons {
+        gap: 60px;
+
+        margin-bottom: 45px;
+    }
+
+    .contact-icon i {
+        font-size: 55px;
+    }
+
+    .contact-icon p {
+        font-size: 17px;
+    }
+
+    .contact-person {
+        margin-bottom: 28px;
+    }
+
+    .contact-person h2 {
+        font-size: 22px;
+    }
+
+    .contact-person a {
+        font-size: 16px;
+    }
+}
+/* =========================================
+   TEAM PAGE
+   ========================================= */
+
+.team-page {
+    margin: 0;
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            rgba(0, 5, 18, 0.25),
+            rgba(0, 5, 18, 0.25)
+        ),
+        url("../images/background.jpg")
+        center center / cover fixed no-repeat;
+
+    color: white;
+}
+
+
+/* Team Content */
+
+.team-content {
+    width: 92%;
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding-top: 120px;
+    padding-bottom: 60px;
+
+    text-align: center;
+}
+
+
+/* Heading */
+
+.team-content {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding-top: 110px;
+    padding-bottom: 60px;
+
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+
+.team-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 30px;
+
+    width: 100%;
+}
+
+
+.team-card {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 25px 20px;
+
+    text-align: center;
+
+    background: rgba(0, 0, 0, 0.30);
+
+    border: 1px solid rgba(255, 255, 255, 0.35);
+
+    border-radius: 15px;
+
+    backdrop-filter: blur(4px);
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.45);
+}
+
+
+/* Photo */
+
+.team-card img {
+    width: 160px;
+    height: 160px;
+
+    object-fit: contain !important;
+
+    display: block;
+    margin: 0 auto 14px auto;
+
+    border: 3px solid white;
+    border-radius: 15px;
+
+    background: white;
+
+    box-sizing: border-box;
+}
+
+
+/* Position */
+
+.team-card h2 {
+    margin: 5px 0 8px;
+
+    font-size: 21px;
+
+    color: white;
+
+    text-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+
+/* Name */
+
+.team-card h3 {
+    margin: 0 0 5px;
+
+    font-size: 19px;
+
+    font-weight: 600;
+
+    color: white;
+}
+
+
+/* Department */
+
+.team-card p {
+    margin: 0 0 12px;
+
+    font-size: 16px;
+
+    color: white;
+}
+
+
+/* Email */
+
+.team-card a {
+    display: inline-block;
+
+    color: white;
+
+    font-size: 14px;
+
+    text-decoration: none;
+
+    word-break: break-word;
+
+    text-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+
+.team-card a:hover {
+    text-decoration: underline;
+}
+
+
+.team-card a i {
+    margin-right: 6px;
+}
+
+
+/* Hover */
+
+.team-card:hover {
+    transform: translateY(-5px);
+
+    background: rgba(0, 0, 0, 0.45);
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .team-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .team-card img {
+        width: 150px;
+        height: 150px;
+
+        object-fit: contain !important;
+
+        border-radius: 15px;
+    }
+}
