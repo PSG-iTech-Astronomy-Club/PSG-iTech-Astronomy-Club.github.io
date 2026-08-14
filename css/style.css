@@ -993,3 +993,6 @@ body {
         font-size: 30px !important;
     }
 }
+.gallery-section h1 {
+    text-transform: uppercase;
+}
