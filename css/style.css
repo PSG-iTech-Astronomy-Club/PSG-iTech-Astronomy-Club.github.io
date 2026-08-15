@@ -1024,47 +1024,75 @@ body {
 
     .team-grid {
         grid-template-columns: 1fr 1fr;
-        gap: 12px;
-        padding: 0 10px;
+        gap: 10px;
+        padding: 0 8px;
     }
 
+    /* OUTER TEAM FRAME - 1:1 SQUARE */
     .team-card {
-        padding: 18px 8px;
+        aspect-ratio: 1 / 1;
+        width: 100%;
+        height: auto;
+        padding: 10px 5px;
         border-radius: 15px;
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        overflow: hidden;
     }
 
+    /* INNER PHOTO FRAME - 3:4 */
     .team-card img {
-        width: 125px !important;
-        height: 165px !important;
-        max-width: 125px !important;
-        max-height: 165px !important;
+        width: 105px !important;
+        height: 140px !important;
+
+        max-width: 105px !important;
+        max-height: 140px !important;
+
         object-fit: cover !important;
-        margin: 0 auto 12px auto !important;
+
+        display: block !important;
+        margin: 0 auto 7px auto !important;
+
         border: none !important;
-        border-radius: 12px !important;
+        border-radius: 10px !important;
+        flex-shrink: 0;
     }
 
+    /* POSITION */
     .team-card h2 {
-        font-size: 20px;
-        line-height: 1.2;
-        margin: 8px 0;
-    }
-
-    .team-card h3 {
-        font-size: 18px;
-        line-height: 1.25;
-        margin: 6px 0;
-    }
-
-    .team-card p {
         font-size: 15px;
-        line-height: 1.35;
-        margin: 5px 0;
+        line-height: 1.1;
+        margin: 3px 0;
+        text-align: center;
+    }
+
+    /* NAME */
+    .team-card h3 {
+        font-size: 13px;
+        line-height: 1.1;
+        margin: 3px 0;
+        text-align: center;
+    }
+
+    /* YEAR / DEPARTMENT */
+    .team-card p {
+        font-size: 11px;
+        line-height: 1.1;
+        margin: 2px 0;
+        text-align: center;
         overflow-wrap: anywhere;
     }
 
+    /* EMAIL */
     .team-card a {
-        font-size: 14px;
+        font-size: 10px;
+        line-height: 1.1;
+        text-align: center;
         overflow-wrap: anywhere;
     }
 }
