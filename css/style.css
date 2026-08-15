@@ -1021,89 +1021,82 @@ body {
 /* ---------- MOBILE ---------- */
 
 /* =========================================
-   TEAM PAGE - MOBILE FINAL VERSION
+   TEAM PAGE - MOBILE
+   OUTER CARD = 1:1
+   PHOTO = 3:4
    ========================================= */
 
 @media (max-width: 600px) {
 
-    /* Two cards in each row */
     .team-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 12px;
         width: 100%;
     }
 
-    /* OUTER FRAME - SQUARE 1:1 */
+    /* OUTER FRAME - SQUARE */
     .team-card {
         width: 100%;
         aspect-ratio: 1 / 1;
 
-        padding: 10px 6px;
-
         box-sizing: border-box;
-        border-radius: 15px;
+        padding: 8px 5px;
 
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: flex-start;
 
         text-align: center;
+
+        border-radius: 15px;
 
         overflow: hidden;
     }
 
-    /* INNER PHOTO - 3:4 */
+    /* PHOTO - 3:4 */
     .team-card img {
-        width: 105px !important;
-        height: 140px !important;
+        width: 78px !important;
+        height: 104px !important;
 
-        max-width: 105px !important;
-        max-height: 140px !important;
+        aspect-ratio: 3 / 4;
 
         object-fit: cover !important;
 
-        display: block !important;
-
-        margin: 0 auto 6px auto !important;
-
         border: none !important;
-        border-radius: 10px !important;
+        border-radius: 9px !important;
 
-        background: none !important;
+        margin: 0 auto 4px auto !important;
 
         flex-shrink: 0;
     }
 
     /* POSITION */
     .team-card h2 {
-        margin: 3px 0 3px 0 !important;
+        font-size: 11px !important;
+        line-height: 1.05 !important;
 
-        font-size: 14px !important;
-        line-height: 1.1 !important;
-
-        font-weight: 600;
+        margin: 2px 0 !important;
 
         text-align: center;
     }
 
     /* NAME */
     .team-card h3 {
-        margin: 2px 0 3px 0 !important;
+        font-size: 10px !important;
+        line-height: 1.05 !important;
 
-        font-size: 13px !important;
-        line-height: 1.1 !important;
-
-        font-weight: 600;
+        margin: 2px 0 !important;
 
         text-align: center;
     }
 
-    /* DEPARTMENT / YEAR */
+    /* YEAR / DEPARTMENT */
     .team-card p {
-        margin: 2px 0 3px 0 !important;
+        font-size: 8.5px !important;
+        line-height: 1.1 !important;
 
-        font-size: 11px !important;
-        line-height: 1.15 !important;
+        margin: 2px 0 !important;
 
         text-align: center;
 
@@ -1112,12 +1105,10 @@ body {
 
     /* EMAIL */
     .team-card a {
-        display: block;
+        font-size: 8px !important;
+        line-height: 1.05 !important;
 
-        margin: 2px 0 0 0 !important;
-
-        font-size: 10px !important;
-        line-height: 1.15 !important;
+        margin-top: 2px !important;
 
         text-align: center;
 
@@ -1125,8 +1116,8 @@ body {
         word-break: break-word;
     }
 
-    /* Email icon */
     .team-card a i {
-        margin-right: 3px;
+        font-size: 9px;
+        margin-right: 2px;
     }
 }
