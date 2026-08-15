@@ -1021,14 +1021,50 @@ body {
 /* ---------- MOBILE ---------- */
 
 @media (max-width: 600px) {
-    .team-card img {
-        width: 150px !important;
-        height: 200px !important;
-        max-width: 150px !important;
-        max-height: 200px !important;
 
+    .team-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        padding: 0 10px;
+    }
+
+    .team-card {
+        padding: 18px 8px;
+        border-radius: 15px;
+    }
+
+    .team-card img {
+        width: 125px !important;
+        height: 165px !important;
+        max-width: 125px !important;
+        max-height: 165px !important;
         object-fit: cover !important;
+        margin: 0 auto 12px auto !important;
         border: none !important;
-        border-radius: 15px !important;
+        border-radius: 12px !important;
+    }
+
+    .team-card h2 {
+        font-size: 20px;
+        line-height: 1.2;
+        margin: 8px 0;
+    }
+
+    .team-card h3 {
+        font-size: 18px;
+        line-height: 1.25;
+        margin: 6px 0;
+    }
+
+    .team-card p {
+        font-size: 15px;
+        line-height: 1.35;
+        margin: 5px 0;
+        overflow-wrap: anywhere;
+    }
+
+    .team-card a {
+        font-size: 14px;
+        overflow-wrap: anywhere;
     }
 }
